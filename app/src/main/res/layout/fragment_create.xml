@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:id="@+id/nav_host_fragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.Create">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:text="Create your Activity"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:fontFamily="@font/monbold"
+        android:id="@+id/tv"
+        android:textColor="@color/colorPrimary"></TextView>
+    <RelativeLayout
+        android:layout_below="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_weight=".28"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="19dp"
+        android:id="@+id/spinner1"
+        android:background="@drawable/spinner_border"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/ic_user_silhouette" />
+
+        <Spinner
+            android:id="@+id/spinner_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:entries="@array/activities"
+            android:layout_marginHorizontal="45dp"
+            android:spinnerMode="dropdown" />
+
+
+
+    </RelativeLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/spinner1"
+    android:background="@drawable/rounded_border_edittext"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginTop="15dp"
+    android:theme="@style/TextLabel"
+    android:id="@+id/tex1"
+    android:clickable="true"
+    android:editable="false"
+    android:focusable="false"
+    >
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/edit_date"
+        android:hint="Select a Date"
+        android:textSize="15sp"
+        android:drawablePadding="10dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:textColor="@color/colorPrimary"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_date_range_black_24dp"></com.google.android.material.textfield.TextInputEditText>
+</com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tex1"
+        android:background="@drawable/rounded_border_edittext"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        android:focusable="false"
+        android:theme="@style/TextLabel"
+        android:id="@+id/tex2"
+        android:clickable="true"
+        android:editable="false"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/edit_hours"
+            android:focusable="false"
+            android:hint="Work Hour"
+            android:textSize="15sp"
+            android:drawablePadding="12dp"
+            android:clickable="true"
+            android:editable="false"
+            android:textColor="@color/colorPrimary"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_access_time_black_24dp"></com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <RadioGroup
+            android:layout_below="@+id/tex2"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rg_soloteam"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Solo"
+                android:drawablePadding="20dp"
+                android:drawableRight="@drawable/ic_male_user"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/rb_solo"
+                android:textSize="20sp"></RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Team"
+                android:layout_marginLeft="15dp"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/ic_group_black_24dp"
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/rb_team"
+                android:textSize="20sp"></RadioButton>
+        </RadioGroup>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rg_soloteam"
+        android:background="@drawable/rounded_border_edittext"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        android:theme="@style/TextLabel"
+        android:id="@+id/tex3"
+        >
+        <EditText
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/edit_description"
+            android:hint="Description of Activity(if any)"
+            android:textSize="15sp"
+            android:inputType="text"
+            android:drawablePadding="12dp"
+            android:textColor="@color/colorPrimary"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_description_black_24dp"></EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tex3"
+        android:layout_marginTop="40dp"
+        android:id="@+id/confirm"
+        android:text="Add Activity"
+        android:paddingLeft="10dp"
+        android:textColor="@color/colorPrimary"
+        android:drawableLeft="@drawable/ic_add_alarm_black_24dp"
+        android:textAllCaps="false"
+        android:background="@drawable/button_shape"
+        android:layout_centerHorizontal="true"></Button>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirm"
+        android:layout_marginTop="30dp"
+        android:id="@+id/showact"
+        android:text="Show Activities"
+        android:paddingLeft="10dp"
+        android:textColor="@color/colorPrimary"
+        android:drawableLeft="@drawable/book"
+        android:textAllCaps="false"
+        android:background="@drawable/button_shape"
+        android:layout_centerHorizontal="true"></Button>
+
+</RelativeLayout>
+</FrameLayout>

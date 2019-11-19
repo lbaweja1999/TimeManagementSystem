@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Create"
+        android:icon="@drawable/ic_create_black_24dp"
+        android:id="@+id/create"
+        />
+<!--    <item-->
+<!--        android:title="Read"-->
+<!--        android:icon="@drawable/book"-->
+<!--        android:id="@+id/read"-->
+<!--        />-->
+    <item
+        android:title="Update"
+        android:icon="@drawable/taskcomplete"
+        android:id="@+id/update"
+        />
+    <item
+        android:title="Delete"
+        android:icon="@drawable/ic_delete_black_24dp"
+        android:id="@+id/delete"></item>
+</menu>

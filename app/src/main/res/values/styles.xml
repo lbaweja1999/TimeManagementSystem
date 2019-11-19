@@ -1,0 +1,54 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#000</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+        <item name="android:datePickerDialogTheme" tools:targetApi="lollipop">@style/MyDatePickerDialogStyle</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/monreg</item>
+
+
+
+    </style>
+    <style name="TextLabel" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/colorPrimary</item>
+        <item name="android:textSize">20sp</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+    <style name="spinnerItemStyle" parent="android:Widget.TextView.SpinnerItem">
+        <item name="android:textSize">15dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="spinnerDropDownItemStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorPrimary">@color/darkblue</item>
+    </style>
+    <style name="MyDatePickerDialogStyle" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="MyRatingBarTwo" parent="Widget.AppCompat.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar</item>
+        <item name="colorControlNormal">#f57c00</item>
+        <item name="colorControlActivated">#c51162</item>
+    </style>
+
+
+</resources>

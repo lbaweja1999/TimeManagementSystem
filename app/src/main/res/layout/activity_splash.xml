@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Splash"
+    android:background='@drawable/background1'
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="209dp"
+            android:layout_height="170dp"
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="97dp"
+            android:src="@drawable/teacher" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="131dp"
+            android:layout_marginTop="69dp"
+            android:src="@drawable/ellipse" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="147dp"
+            android:layout_marginTop="80dp"
+            android:text="3"
+            android:textColor="#fff"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginBottom="0dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="580dp"
+
+                android:src="@drawable/nculogo12" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+        <ImageView
+            android:layout_width="124dp"
+            android:layout_height="125dp"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="255dp"
+            android:layout_marginEnd="37dp"
+            android:src="@drawable/teacher1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="54dp"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="242dp"
+            android:layout_marginEnd="18dp"
+            android:src="@drawable/ellipse" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="247dp"
+            android:layout_marginEnd="44dp"
+            android:text="2"
+            android:textColor="#fff"
+            android:textSize="30sp" />
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="132dp"
+        android:layout_height="154dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="360dp"
+        android:src="@drawable/teacher2" />
+
+    <ImageView
+        android:layout_width= "wrap_content"
+        android:layout_height="54dp"
+
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="124dp"
+        android:layout_marginBottom="340dp"
+        android:src="@drawable/ellipse" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginBottom="345dp"
+        android:text="1"
+        android:textColor="#fff"
+        android:textSize="30sp" />
+
+
+</RelativeLayout>

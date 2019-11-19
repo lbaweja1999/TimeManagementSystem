@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".Activities.Profile">
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/profile_tool"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"></include>
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/imageView"
+        android:layout_below="@+id/profile_tool"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="10dp">
+
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:id="@+id/tv_name"
+        android:layout_marginLeft="20dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        ></TextView>
+    <TextView
+        android:id="@+id/textViewName"
+        android:text="Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="76dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            android:id="@+id/tv_email"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textStyle="bold"></TextView>
+        <TextView
+        android:id="@+id/textViewEmail"
+            android:text="Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="80dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_phone"
+                android:text="Contact:"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="59dp"
+                android:id="@+id/phoneno"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:text="Contact"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_designation"
+                android:text="Designation:"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/designation"
+                android:text="Designation"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" ></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender:"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gender"
+                android:text="Gender"
+                android:layout_marginLeft="67dp"
+                android:layout_marginTop="15dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" ></TextView>
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Log Out"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="480dp"
+        android:id="@+id/btn_signout"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/button_shape"
+        android:textSize="22dp"
+        android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/ic_logout"></Button>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rateus"
+            android:layout_marginTop="670dp"
+            android:textSize="20sp"
+            android:id="@+id/tv_rateus"
+            android:textColor="@color/lightblue"
+            android:layout_marginHorizontal="20dp"
+            android:textAlignment="center"
+            ></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:padding="5dp"
+            android:layout_alignParentBottom="true"
+            android:text="© 2019 The NorthCap University. All rights reserved."
+            android:textAlignment="center"
+            android:textColor="@android:color/white" />
+    <LinearLayout
+        android:id="@+id/myrating"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_below="@+id/btn_signout"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="70dp"
+        android:layout_height="wrap_content"></LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/grey"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Info">
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/tool_info"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"></include>
+    <TextView
+        android:layout_below="@id/tool_info"
+        android:layout_marginLeft="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/monreg"
+        android:text="Please enter the following details to proceed further!"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="normal">
+
+    </TextView>
+    <LinearLayout
+        android:layout_marginTop="180dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/rounded_border_edittext"
+            android:layout_marginHorizontal="20dp"
+            android:theme="@style/TextLabel"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/edit_number"
+                android:hint="Enter your Contact No."
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"
+                android:singleLine="true"
+                android:digits="0123456789"
+                android:maxLength="10"
+                android:inputType="phone"
+                android:drawablePadding="15dp"
+                android:drawableLeft="@drawable/ic_phone_black_24dp"
+                android:background="@android:color/transparent"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_weight=".28"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="19dp"
+            android:background="@drawable/spinner_border"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/ic_user_silhouette" />
+
+            <Spinner
+                android:id="@+id/spinner_desg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                android:entries="@array/designation"
+                android:layout_marginHorizontal="50dp"
+                android:spinnerMode="dropdown" />
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                app:srcCompat="@drawable/ic_group_black_24dp"></ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/tv_rgender"
+                android:text="Gender:"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"></TextView>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rg_gender"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="35dp">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:drawableRight="@drawable/ic_male_user"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/rb_male"
+                    android:drawablePadding="25dp"
+                    android:textSize="20sp"></RadioButton>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:drawableRight="@drawable/ic_woman_avatar"
+                    android:textColor="@color/colorPrimary"
+                    android:drawablePadding="5dp"
+                    android:id="@+id/rb_female"
+                    android:textSize="20sp"></RadioButton>
+            </RadioGroup>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:drawableLeft="@drawable/ic_check_circle_black_24dp"
+                android:paddingLeft="10dp"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/button_shape"
+                android:layout_marginTop="25dp"
+                android:id="@+id/btn_submit"
+                />
+        </RelativeLayout>  </LinearLayout>
+
+
+</RelativeLayout>
